@@ -1,0 +1,22 @@
+@media screen and (max-width: 700px) {
+    #topnav {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+    }
+
+    .block {
+        grid-template-columns: 100%;
+
+        .words {
+            padding: 0;
+
+            div {
+                margin: 0;
+                padding: 10px 10px;
+            }
+        }
+    }
+}

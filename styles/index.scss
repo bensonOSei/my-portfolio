@@ -1,0 +1,172 @@
+* {box-sizing: border-box;}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(218, 216, 216);
+    scroll-behavior: smooth;
+}
+
+.darkMode {
+    background-color: rgb(22, 22, 22);
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 100px auto;
+    //padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    background-color: rgba(218, 216, 216, 0.733);
+
+    a{
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    #navItems {
+        display: none;
+        justify-self: center;
+        padding: 20px;
+        animation: slideNav 0.5s ease-in-out;
+        a{
+            padding-left: 10px;
+            text-align: center;
+
+            &:hover {
+                background-color: rgb(233, 224, 224);
+            }
+        }
+    }
+}
+#bars {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+
+    .bar {
+        background-color: black;
+        width: 30px;
+        height: 6px;
+        margin: 5px;
+        z-index: 100;
+
+    }
+}
+#sideNav {
+    display: none;
+    width: 250px;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 99;
+    transition: width 0.3s;
+
+    a {
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        padding: 30px;
+        margin: 15px 10px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+}
+
+.block {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 90px;
+    margin-bottom: 10px;
+
+    .words {
+        display: grid;
+        padding: 10px;
+        font-size: 1em;
+        overflow: hidden;
+        background-color: white;
+        background: linear-gradient(to right, white, rgb(218, 216, 216));
+
+        div {
+            align-self: center;
+            padding: 10px 0px 10px 10px;
+            margin: 10px;
+            width: 100%;
+            height: 500px;
+
+            h2,h3 {
+                font-size: 1em;
+                font-weight: lighter;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(205, 146, 50);
+            }
+        }
+
+
+
+    }
+
+    .myImg {
+        background-color: white;
+        background: linear-gradient(to left, white, rgb(218, 216, 216));
+        img {
+            //margin-top: -20px;
+            height: 100%;
+            width: 100%;  
+            object-fit: cover;         
+            animation: slide 0.5s ease-in-out ;
+        }
+
+    }
+}
+
+.footer {
+    margin-top: 10px;
+    p{
+        text-align: center;
+        background-color: white;
+        padding: 10px;
+
+        a {
+            text-decoration: none;
+            color: rgb(205, 146, 50);
+        }
+    }
+}
+@import 'mediaQuery';
+
