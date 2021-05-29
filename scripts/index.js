@@ -6,7 +6,7 @@ $(document).ready(function(){
         $("#sideNav").toggle("fast");
     });
 
-    $("#dark, #darkM").click(function(){
+    $("#dark").click(function(){
         $("body").toggleClass("darkMode");
         $(".bar").css("background-color","white");
         $(this).text("Light Mode")

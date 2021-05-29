@@ -9,9 +9,10 @@
 
     .block {
         grid-template-columns: 100%;
+        padding: 0;
 
         .words {
-            padding: 0;
+            padding: 30px;
 
             div {
                 margin: 0;
