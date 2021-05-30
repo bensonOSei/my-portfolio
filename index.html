@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
     <script src="scripts/index.js"></script>
     <title>Benson</title>
 </head>
@@ -14,11 +16,17 @@
         <a href="javascript:void(0)"  id="hide" >Menu</a>
 
         <div id="navItems">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="#">Works</a>
-            <a href="#">Socials</a>
+            <a href="javascript:void(0)" id="socials">Socials</a>
+            <div id="dropSocials">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
             <a href="#">Contact</a>
-            <a href="javascript:void(0)"  id="dark" >Dark Mode</a>
+            <a href="javascript:void(0)"  id="dark" > <i style="padding-right: 5px;" class="glyphicon glyphicon-adjust"></i>Toggle Dark Mode</a>
         </div>
     </div>
 
@@ -31,11 +39,18 @@
     <div id="sideNav">
         <a href="#">Home</a>
         <a href="#">Works</a>
-        <a href="#">Socials</a>
+        <a href="javascript:void(0)" id="socialsM">Socials</a>
+        <div id="dropSocialsM">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
         <a href="#">Contact</a>
         <a href="javascript:void(0)"  id="darkM" >Dark Mode</a>
     </div>
-    <div class="block">
+    <div class="block" id="one">
         <div class="words">
             <div>
             <h2>Hi, I'm Benson</h2>
@@ -52,14 +67,14 @@
         </div>    
     </div>
 
-    <div class="block">
+    <div class="block" id="two">
         <div class="myImg">
             <img src="BENSON FLYER.jpg" alt="">
         </div>
         <div class="words">
             <div>
-                <h1>I'm a Politician</h1>
-                <h2>I am a student politician to be specific.
+                <h1>I'm a Leader</h1>
+                <h2>I am a student leader among other things.
                     I am currently runnig for Caseley-Hayford Hall(UCC, Ghana) Secretary.
                 </h2>
                 <a href="#">Learn more</a>
@@ -67,7 +82,7 @@
         </div>
     </div>
 
-    <div class="block">
+    <div class="block" id="three">
         <div class="words">
             <div>
             <h1>I am a Philanthropist</h1>
@@ -79,8 +94,14 @@
         </div>
 
         <div class="myImg">
-            <img src="me.png" alt="My picture">
+            <img src="fucre.jpg" alt="My picture">
         </div>    
+    </div>
+
+    <div class="dotNav">
+        <a href="#one" title="Designer"><div class="dot"></div></a>
+        <a href="#two" title="Leader"><div class="dot"></div></a>
+        <a href="#three" title="Philantropist"><div class="dot"></div></a>
     </div>
 
 

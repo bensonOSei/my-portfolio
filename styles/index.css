@@ -5,6 +5,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,37 +13,21 @@ body {
   margin: 0;
   height: 100%;
   background-color: #dad8d8;
-  scroll-behavior: smooth;
 }
 
 .darkMode {
   background-color: #161616;
 }
 
-@-webkit-keyframes slide {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.darkModeM {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#202020), to(#373737));
+  background: linear-gradient(to right, #202020, #373737);
 }
 
-@keyframes slide {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.darkModeM img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 #topnav {
@@ -83,6 +68,23 @@ body {
   background-color: #e9e0e0;
 }
 
+#topnav #navItems #dropSocials {
+  display: none;
+  position: absolute;
+  left: 48.5%;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.089);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.089);
+  overflow: hidden;
+}
+
+#topnav #navItems #dropSocials a {
+  display: block;
+  width: 100%;
+}
+
 #bars {
   display: none;
   position: fixed;
@@ -91,6 +93,7 @@ body {
   width: 50px;
   height: 50px;
   opacity: 0.4;
+  z-index: 100;
 }
 
 #bars .bar {
@@ -98,7 +101,15 @@ body {
   width: 30px;
   height: 6px;
   margin: 5px;
-  z-index: 100;
+  border-radius: 20px;
+}
+
+#bars .bar:first-child {
+  width: 25px;
+}
+
+#bars .bar:last-child {
+  width: 15px;
 }
 
 #bars:hover {
@@ -132,6 +143,19 @@ body {
   opacity: 1;
 }
 
+#sideNav #dropSocialsM {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -170px;
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+#sideNav #dropSocialsM a {
+  background-color: transparent;
+  text-align: center;
+}
+
 .block {
   height: 100vh;
   display: -ms-grid;
@@ -150,8 +174,8 @@ body {
   font-size: 1em;
   overflow: hidden;
   background-color: white;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(#dad8d8));
-  background: linear-gradient(to right, white, #dad8d8);
+  -webkit-box-shadow: 2px 2px 10px 2px rgba(128, 128, 128, 0.246);
+          box-shadow: 2px 2px 10px 2px rgba(128, 128, 128, 0.246);
 }
 
 .block .words div {
@@ -176,8 +200,8 @@ body {
 
 .block .myImg {
   background-color: white;
-  background: -webkit-gradient(linear, right top, left top, from(white), to(#dad8d8));
-  background: linear-gradient(to left, white, #dad8d8);
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#dad8d8));
+  background: linear-gradient(to right, white, #dad8d8);
 }
 
 .block .myImg img {
@@ -187,6 +211,23 @@ body {
      object-fit: cover;
   -webkit-animation: slide 0.5s ease-in-out;
           animation: slide 0.5s ease-in-out;
+}
+
+.dotNav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  width: 20px;
+  height: 100px;
+}
+
+.dotNav a .dot {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.5;
 }
 
 .footer {

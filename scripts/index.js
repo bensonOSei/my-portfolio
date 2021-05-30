@@ -8,9 +8,18 @@ $(document).ready(function(){
 
     $("#dark").click(function(){
         $("body").toggleClass("darkMode");
-        $(".bar").css("background-color","white");
-        $(this).text("Light Mode")
 
+    })
+    $("#darkM").click(function(){
+        $(".words, .myImg").toggleClass("darkModeM");
+    })
+
+    $("#socials").click(function(){
+        $("#dropSocials").toggle("fast");
+    })
+    $("#socialsM").click(function(){
+        $("#dropSocialsM").toggle("fast");
     })
 
 });
+
