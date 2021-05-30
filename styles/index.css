@@ -97,7 +97,7 @@ body {
 }
 
 #bars .bar {
-  background-color: black;
+  background-color: #cd9232;
   width: 30px;
   height: 6px;
   margin: 5px;
@@ -133,7 +133,7 @@ body {
   text-decoration: none;
   padding: 30px;
   margin: 15px 10px;
-  background-color: #fac9c9;
+  background-color: #cd9232;
   color: black;
   font-size: 20px;
   opacity: 0.7;
@@ -148,7 +148,7 @@ body {
   position: absolute;
   top: 50px;
   left: -170px;
-  background-color: rgba(241, 204, 204, 0.911);
+  background-color: #cd9232;
 }
 
 #sideNav #dropSocialsM a {
