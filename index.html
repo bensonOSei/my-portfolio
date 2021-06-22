@@ -4,111 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benson Osei Mensah</title>
+    <script src="https://kit.fontawesome.com/6db44154cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
-    <script src="scripts/index.js"></script>
-    <title>Benson</title>
 </head>
 <body>
-    <div id="topnav">
-        <a href="javascript:void(0)"  id="hide" >Menu</a>
+    <div class="loader">
+        <div class="dot"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
 
-        <div id="navItems">
-            <a href="index.html">Home</a>
-            <a href="#">Works</a>
-            <a href="javascript:void(0)" id="socials">Socials</a>
-            <div id="dropSocials">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
-            <a href="#">Contact</a>
-            <a href="javascript:void(0)"  id="dark" > <i style="padding-right: 5px;" class="glyphicon glyphicon-adjust"></i>Toggle Dark Mode</a>
+    <div class="menu" id="menu">
+        <div class="menu_links">
+            <a href="#"><i class="fa fa-home"></i> Home</i></a>
+            <a href="#clients"><i class="fas fa-users"></i> Clients</i></a>
+            <a href="#projects"><i class="fas fa-archive"></i> Projects</i></a>
+            <a href="#about"><i class="fas fa-user-circle"></i> About</i></a>
+            <a href="#contact"><i class="fas fa-comment"></i> Contact</i></a>
         </div>
     </div>
 
-    <div id="bars">
+    <div class="intro">
+        <div class="welcome_msg">
+            <h1 id="title">Hello!</h1>
+            <h2>Welcome to my website</h2>
+            <p>I am Benson. Look around and learn more about me and what I do</p>
+        </div>
+
+        <div class="img_container">
+            <img src="images/ben.jpg" alt="Benson's Picture" id="mypic">
+        </div>
+        
+    </div>
+
+    <div class="container" id="clients">
+        <div class="header">
+            <h3>Clients <i class="fas fa-users"></i> </h3>
+        </div>
+
+        <div class="content" style="background-color: rgb(251, 197, 1); box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.13);">
+            <div class="doodle">
+                <img src="images/Video call_Isometric.png" alt="Loving image">
+            </div>
+            <div class="myself">
+                <p>My clients are the reason I work hard.</p>
+                <p>I have built a relationship with all my clients over the periods I have
+                    worked with them
+                </p>
+                <a href="clients.html">Read more</a>
+            </div>
+
+            <div class="links">
+                <a href="#clients" class="active-link"><i class="fas fa-users"></i> Clients</i></a>
+                <a href="#projects"><i class="fas fa-archive"></i> Projects</i></a>
+                <a href="#about"><i class="fas fa-user-circle"></i> About</i></a>
+                <a href="#contact"><i class="fas fa-comment"></i> Contact</i></a>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="container" id="projects">
+        <div class="header"> 
+            <h3>Projects <i class="fas fa-archive"></i></h3>
+        </i></div>
+        <div class="content">
+            <div class="doodle">
+                <img src="images/Designer _Two Color.png" alt="Clumsy vector image">
+            </div>
+            <div class="myself">
+                <p>Who is a developer without projects...right?</p>
+                <p>I have a few projects in my catalog</p>
+                <a href="#">Check them out</a>
+            </div>
+
+            <div class="links">
+                <a href="#clients" ><i class="fas fa-users"></i> Clients</i></a>
+                <a href="#projects" class="active-link"><i class="fas fa-archive"></i> Projects</i></a>
+                <a href="#about"><i class="fas fa-user-circle"></i> About</i></a>
+                <a href="#contact"><i class="fas fa-comment"></i> Contact</i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <div class="header">
+            <h3>About Me <i class="fas fa-user-circle"></i> </h3>
+        </div>
+
+        <div class="content">
+            <div class="doodle">
+                <img src="images/Designer _Flatline.png" alt="Vector image">
+            </div>
+            <div class="myself">
+                <p>I am a self-taught Graphic Designer and Frontend Web Developer</p>
+                <p>I am a pretty chill person, you know.</p>
+                <a href="#" >Read More</a>
+            </div>
+            <div class="links">
+                <a href="#clients" ><i class="fas fa-users"></i> Clients</i></a>
+                <a href="#projects" ><i class="fas fa-archive"></i> Projects</i></a>
+                <a href="#about" class="active-link"><i class="fas fa-user-circle"></i> About</i></a>
+                <a href="#contact"><i class="fas fa-comment"></i> Contact</i></a>
+            </div>
+
+            
+    
+        </div>
+
+    </div>
+
+
+    <div class="container" id="contact">
+        <div class="header">
+            <h3>Contact <i class="fas fa-comment"></i></h3>
+        </div>
+
+        <div class="content">
+            <div class="links">
+                <a href="#clients" ><i class="fas fa-users"></i> Clients</i></a>
+                <a href="#projects" ><i class="fas fa-archive"></i> Projects</i></a>
+                <a href="#about"><i class="fas fa-user-circle"></i> About</i></a>
+                <a href="#contact"  class="active-link"><i class="fas fa-comment"></i> Contact</i></a>
+            </div>
+
+            <div class="doodle">
+                <img src="images/Sending emails_Monochromatic.png" alt="Laying down vector image">
+            </div>
+            <div class="myself" >
+                <p>Looking to contact me?</p>
+                <a href="contact.html" style="padding: 10px; font-size: 15px;">Send message</a>
+                <h4>Get interactive </h4>
+                <div class="social-media-links">
+                    <a href="https://web.facebook.com/benson.osei.54"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/kwaku_benny"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/kwaku_benny/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/benson-osei-mensah-52098118a/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/bensonOSei"><i class="fa fa-github"></i></a>
+                </div>
+
+    
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="menu-bar">
         <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-
-    <div id="sideNav">
-        <a href="#">Home</a>
-        <a href="#">Works</a>
-        <a href="javascript:void(0)" id="socialsM">Socials</a>
-        <div id="dropSocialsM">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-        </div>
-
-        <a href="#">Contact</a>
-        <a href="javascript:void(0)"  id="darkM" >Dark Mode</a>
-    </div>
-    <div class="block" id="one">
-        <div class="words">
-            <div>
-            <h2>Hi, I'm Benson</h2>
-            <h1>I am a web/graphic designer</h1>
-            <h3>I am a Ghanaian designer who loves creating beautiful
-                customer friendly designs.
-            </h3>
-            <a href="#">Learn more</a>
-            </div>
-        </div>
-
-        <div class="myImg">
-            <img src="me.png" alt="My picture">
-        </div>    
-    </div>
-
-    <div class="block" id="two">
-        <div class="myImg">
-            <img src="BENSON FLYER.jpg" alt="">
-        </div>
-        <div class="words">
-            <div>
-                <h1>I'm a Leader</h1>
-                <h2>I am a student leader among other things.
-                    I am currently runnig for Caseley-Hayford Hall(UCC, Ghana) Secretary.
-                </h2>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="block" id="three">
-        <div class="words">
-            <div>
-            <h1>I am a Philanthropist</h1>
-            <h3>
-                I love helping my community. I do donations and outreach programmes.
-            </h3>
-            <a href="#">Learn more</a>
-            </div>
-        </div>
-
-        <div class="myImg">
-            <img src="fucre.jpg" alt="My picture">
-        </div>    
-    </div>
-
-    <div class="dotNav">
-        <a href="#one" title="Designer"><div class="dot"></div></a>
-        <a href="#two" title="Leader"><div class="dot"></div></a>
-        <a href="#three" title="Philantropist"><div class="dot"></div></a>
     </div>
 
 
+    <div id="gotop">
+        <a href="#">Top</a>
+    </div>
 
 
-<div class="footer">
-    <p>Created by <a href="#"><i>Benson</i></a></p>
-</div>
+    <footer>
+        <p>Benson Osei-Mensah &copy; <span id="date"></span> | All Rights Reserved</p>
+    </footer>
+
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
